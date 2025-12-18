@@ -26,7 +26,7 @@ const CopyResult = () => {
     setTimeout(()=>{
       if(copyButton===null) return;
       if ("innerText" in copyButton) {
-        copyButton.innerText = "Copiar";
+        copyButton.innerText = "Copy";
       }
     },2000);
   })
@@ -51,4 +51,7 @@ document.addEventListener("DOMContentLoaded",function (){
 </template>
 
 <style scoped>
+#text{
+  overflow: hidden;
+}
 </style>
